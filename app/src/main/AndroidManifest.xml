@@ -8,7 +8,7 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="Courses"
+        android:label="Learning kids"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Attendance"
@@ -16,7 +16,7 @@
         <activity
             android:name=".activity.auth.SignupActivity"
             android:exported="false"
-            android:label="Signup"
+            android:label="إنشاء حساب"
             android:windowSoftInputMode="adjustResize">
             <meta-data
                 android:name="android.app.lib_name"
@@ -25,7 +25,7 @@
         <activity
             android:name=".activity.auth.LoginActivity"
             android:exported="false"
-            android:label="Login">
+            android:label="تسجيل الدخول">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -33,7 +33,7 @@
         <activity
             android:name=".activity.auth.SplashActivity"
             android:exported="true"
-            android:label="Learning kids">
+            android:label="تعلم الأطفال">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -46,12 +46,12 @@
         <activity
             android:name=".activity.main.HomeActivity"
             android:exported="true"
-            android:label="Home"
+            android:label="الاختبار"
             android:windowSoftInputMode="adjustResize"/>
         <activity
             android:name=".activity.main.ExamResultActivity"
             android:exported="true"
-            android:label="Exam Result"
+            android:label="نتيجة الاختبار"
             android:windowSoftInputMode="adjustResize" />
     </application>
 

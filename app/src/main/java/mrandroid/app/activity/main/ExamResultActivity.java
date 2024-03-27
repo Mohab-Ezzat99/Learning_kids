@@ -19,7 +19,7 @@ public class ExamResultActivity extends AppCompatActivity {
 
         int total = getIntent().getIntExtra("total", 0);
         int score = getIntent().getIntExtra("score", 0);
-        binding.tvResult.setText("Score: " + score + "/" + total);
+        binding.tvResult.setText("النتيجة: " + score + "/" + total);
 
         binding.btnReTakeExam.setOnClickListener(v -> {
             startActivity(new Intent(getBaseContext(), HomeActivity.class));

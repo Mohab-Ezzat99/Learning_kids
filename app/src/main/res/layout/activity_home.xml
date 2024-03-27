@@ -5,6 +5,7 @@
     android:id="@+id/studentRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layoutDirection="rtl"
     tools:context=".activity.main.HomeActivity">
 
     <TextView
@@ -26,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_8sdp"
         android:textColor="@color/black"
-        android:textSize="@dimen/_16ssp"
+        android:textSize="@dimen/_20ssp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/ivSound"
         app:layout_constraintEnd_toEndOf="parent"

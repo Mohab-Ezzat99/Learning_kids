@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
+    android:layoutDirection="rtl"
     android:fitsSystemWindows="true"
     android:scrollbars="none">
 
@@ -27,7 +28,7 @@
             style="@style/TextInputLayoutStyle"
             android:layout_width="@dimen/_270sdp"
             android:layout_height="wrap_content"
-            android:hint="Email"
+            android:hint="البريد الالكترونى"
             android:textColorHint="@color/gray"
             android:layout_marginTop="@dimen/_8sdp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -52,7 +53,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_12sdp"
-            android:hint="Password"
+            android:hint="كلمة المرور"
             android:textColorHint="@color/gray"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/itl_email"
@@ -73,39 +74,13 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <RadioGroup
-            android:id="@+id/radioGroup"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_12sdp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="@+id/tv_forgot"
-            app:layout_constraintStart_toStartOf="@+id/itl_password"
-            app:layout_constraintTop_toBottomOf="@+id/tv_forgot">
-
-            <RadioButton
-                android:id="@+id/rbStudent"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:checked="true"
-                android:text="Student" />
-
-            <RadioButton
-                android:id="@+id/rbDoctor"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Doctor" />
-        </RadioGroup>
-
         <Button
             android:id="@+id/btn_login"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:backgroundTint="?attr/colorPrimaryVariant"
             android:paddingVertical="@dimen/_8sdp"
-            android:text="Login"
+            android:text="تسجيل الدخول"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="@dimen/_12ssp"
@@ -113,14 +88,14 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/itl_email"
             app:layout_constraintStart_toStartOf="@+id/itl_email"
-            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_forgot" />
 
         <TextView
             android:id="@+id/tv_forgot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_8sdp"
-            android:text="Forgot password?"
+            android:text="نسيت كلمة المرور؟"
             android:textColor="?attr/colorPrimaryVariant"
             android:textSize="@dimen/_12ssp"
             android:textStyle="bold"
@@ -145,7 +120,7 @@
                 android:id="@+id/tv_doNotHave"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Don't have an account?"
+                android:text="ليس لديك حساب؟"
                 android:textColor="?attr/colorOnSecondary"
                 android:textSize="@dimen/_14ssp" />
 
@@ -154,7 +129,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_4sdp"
-                android:text="Sign up"
+                android:text="أنشئ حساب"
                 android:textColor="?attr/colorPrimaryVariant"
                 android:textSize="@dimen/_14ssp"
                 android:textStyle="bold" />
