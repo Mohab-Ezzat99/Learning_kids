@@ -4,44 +4,26 @@ import java.util.List;
 
 public class QuestionModel {
 
-    private String question;
-    private boolean is4Option;
-    private boolean isCode;
+    private String text;
+    private int question;
     private List<AnswerModel> answers;
 
-    public QuestionModel() {
-
-    }
-
-    public QuestionModel(String question, boolean is4Option, boolean isCode, List<AnswerModel> answers) {
+    public QuestionModel(String text, int question, List<AnswerModel> answers) {
+        this.text = text;
         this.question = question;
-        this.is4Option = is4Option;
-        this.isCode = isCode;
         this.answers = answers;
     }
 
-    public String getQuestion() {
+    public String getText() {return text;}
+
+    public void setText(String text) {this.text = text;}
+
+    public int getQuestion() {
         return question;
     }
 
-    public void setQuestion(String question) {
+    public void setQuestion(int question) {
         this.question = question;
-    }
-
-    public boolean isIs4Option() {
-        return is4Option;
-    }
-
-    public void setIs4Option(boolean is4Option) {
-        this.is4Option = is4Option;
-    }
-
-    public boolean isCode() {
-        return isCode;
-    }
-
-    public void setCode(boolean code) {
-        isCode = code;
     }
 
     public List<AnswerModel> getAnswers() {

@@ -2,23 +2,19 @@ package mrandroid.app.model;
 
 public class AnswerModel {
 
-    private String answer;
+    private int answer;
     private boolean isCorrect;
 
-    public AnswerModel() {
-
-    }
-
-    public AnswerModel(String answer, boolean isCorrect) {
+    public AnswerModel(int answer, boolean isCorrect) {
         this.answer = answer;
         this.isCorrect = isCorrect;
     }
 
-    public String getAnswer() {
+    public int getAnswer() {
         return answer;
     }
 
-    public void setAnswer(String answer) {
+    public void setAnswer(int answer) {
         this.answer = answer;
     }
 

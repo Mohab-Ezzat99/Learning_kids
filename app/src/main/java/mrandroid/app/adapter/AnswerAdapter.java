@@ -5,37 +5,45 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RadioButton;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
 import com.google.android.material.textfield.TextInputEditText;
+
 import java.util.ArrayList;
 import java.util.List;
-import mrandroid.app.R;
 
-public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.MedicineViewHolder> {
-    private List<String> list = new ArrayList<>();
+import mrandroid.app.R;
+import mrandroid.app.model.AnswerModel;
+
+public class AnswerAdapter extends RecyclerView.Adapter<AnswerAdapter.MedicineViewHolder> {
+
+    private List<AnswerModel> list = new ArrayList<>();
     private OnItemClickListener listener;
+    private int selectedPosition = -1;
 
     @SuppressLint("InflateParams")
     @NonNull
     @Override
     public MedicineViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new MedicineViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_question_doctor, parent, false));
+        return new MedicineViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_answer, parent, false));
     }
 
     @SuppressLint("SetTextI18n")
     @Override
     public void onBindViewHolder(@NonNull MedicineViewHolder holder, int position) {
-        String item = list.get(holder.getAdapterPosition());
+        AnswerModel item = list.get(holder.getAdapterPosition());
 
-        holder.et_question.setText(item);
+        holder.radioButton.setChecked(selectedPosition == holder.getAdapterPosition());
 
-        holder.ivEdit.setOnClickListener(view -> {
-            listener.onEditClick(item);
-        });
+        holder.ivImg.setImageResource(item.getAnswer());
 
-        holder.ivDelete.setOnClickListener(view -> {
-            listener.onDeleteClick(item);
+        holder.itemView.getRootView().setOnClickListener(view -> {
+            listener.onItemClick(item);
+            selectedPosition = holder.getAdapterPosition();
+            notifyDataSetChanged();
         });
     }
 
@@ -44,11 +52,16 @@ public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.Medi
         return list.size();
     }
 
+    public AnswerModel getSelectedAnswer() {
+        return list.get(selectedPosition);
+    }
+
     public void setListener(OnItemClickListener listener) {
         this.listener = listener;
     }
 
-    public void setList(List<String> list) {
+    public void setList(List<AnswerModel> list) {
+        this.selectedPosition = -1;
         this.list = list;
         this.notifyDataSetChanged();
     }
@@ -65,22 +78,19 @@ public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.Medi
 
     static class MedicineViewHolder extends RecyclerView.ViewHolder {
 
-        private final TextInputEditText et_question;
-        private final ImageView ivEdit;
-        private final ImageView ivDelete;
+        private final RadioButton radioButton;
+        private final ImageView ivImg;
 
         public MedicineViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            et_question = itemView.findViewById(R.id.et_question);
-            ivEdit = itemView.findViewById(R.id.ivEdit);
-            ivDelete = itemView.findViewById(R.id.ivDelete);
+            radioButton = itemView.findViewById(R.id.radioButton);
+            ivImg = itemView.findViewById(R.id.ivImg);
 
         }
     }
 
     public interface OnItemClickListener {
-        void onEditClick(String item);
-        void onDeleteClick(String item);
+        void onItemClick(AnswerModel item);
     }
 }
