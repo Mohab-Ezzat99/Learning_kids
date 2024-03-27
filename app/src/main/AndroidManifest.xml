@@ -33,7 +33,7 @@
         <activity
             android:name=".activity.auth.SplashActivity"
             android:exported="true"
-            android:label="Evaluation">
+            android:label="Learning kids">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
