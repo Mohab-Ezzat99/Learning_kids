@@ -50,7 +50,9 @@ public class HomeActivity extends AppCompatActivity implements AnswerAdapter.OnI
 
         binding.ivSound.setOnClickListener(v -> {
             QuestionModel questionModel = questionList.get(questionPosition);
-            audioPlayer.play(this, questionModel.getQuestion());
+            audioPlayer.play(this, questionModel.getQuestion(), () -> {
+                // nothing
+            });
         });
 
         binding.fabSubmit.setOnClickListener(v -> {
@@ -59,34 +61,40 @@ public class HomeActivity extends AppCompatActivity implements AnswerAdapter.OnI
                 return;
             }
 
-            if (questionPosition == questionList.size() - 1) {
-                updateAnswerResult();
-
-                Intent intent = new Intent(getBaseContext(), ExamResultActivity.class);
-                intent.putExtra("total", questionList.size());
-                intent.putExtra("score", correctAnswers);
-                startActivity(intent);
-                finish();
-            } else {
-                updateAnswerResult();
-
-                questionPosition++;
-                setCurrentQuestion();
-            }
+            updateAnswerResult();
         });
 
         setCurrentQuestion();
     }
 
     private void updateAnswerResult() {
+        int resultSound = R.raw.wrong; // by default
         boolean isAnswerCorrect = answerAdapter.getSelectedAnswer().isCorrect();
-        if (isAnswerCorrect) correctAnswers++;
+        if (isAnswerCorrect) {
+            correctAnswers++;
+            resultSound = R.raw.clap;
+        }
+
+        audioPlayer.play(this, resultSound, () -> {
+            if (questionPosition == questionList.size() - 1) {
+                Intent intent = new Intent(getBaseContext(), ExamResultActivity.class);
+                intent.putExtra("total", questionList.size());
+                intent.putExtra("score", correctAnswers);
+                startActivity(intent);
+                finish();
+            } else {
+                questionPosition++;
+                setCurrentQuestion();
+            }
+        });
     }
 
     private void setCurrentQuestion() {
         hasSelectAnswer = false;
         QuestionModel questionModel = questionList.get(questionPosition);
-        audioPlayer.play(this, questionModel.getQuestion());
+        audioPlayer.play(this, questionModel.getQuestion(), () -> {
+            // nothing
+        });
 
         binding.tvQuestionCount.setText("Q: " + (questionPosition + 1) + "/" + questionList.size());
         binding.tvQuestionText.setText(questionModel.getText());
