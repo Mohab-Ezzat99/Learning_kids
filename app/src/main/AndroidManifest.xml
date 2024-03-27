@@ -44,22 +44,12 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".activity.student.StudentActivity"
+            android:name=".activity.main.HomeActivity"
             android:exported="true"
             android:label="Home"
             android:windowSoftInputMode="adjustResize"/>
         <activity
-            android:name=".activity.doctor.DoctorActivity"
-            android:exported="true"
-            android:label="Home"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".activity.doctor.AddQuestionActivity"
-            android:exported="true"
-            android:label="Add Question"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".activity.student.ExamResultActivity"
+            android:name=".activity.main.ExamResultActivity"
             android:exported="true"
             android:label="Exam Result"
             android:windowSoftInputMode="adjustResize" />
