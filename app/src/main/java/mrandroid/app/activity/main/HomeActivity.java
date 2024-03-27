@@ -68,6 +68,7 @@ public class HomeActivity extends AppCompatActivity implements AnswerAdapter.OnI
     }
 
     private void updateAnswerResult() {
+        binding.fabSubmit.setClickable(false);
         int resultSound = R.raw.wrong; // by default
         boolean isAnswerCorrect = answerAdapter.getSelectedAnswer().isCorrect();
         if (isAnswerCorrect) {
@@ -90,6 +91,7 @@ public class HomeActivity extends AppCompatActivity implements AnswerAdapter.OnI
     }
 
     private void setCurrentQuestion() {
+        binding.fabSubmit.setClickable(true);
         hasSelectAnswer = false;
         QuestionModel questionModel = questionList.get(questionPosition);
         audioPlayer.play(this, questionModel.getQuestion(), () -> {
