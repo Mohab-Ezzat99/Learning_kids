@@ -1,30 +1,19 @@
 package mrandroid.app.activity.main;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
-
-import java.util.ArrayList;
 import java.util.List;
 
 import mrandroid.app.R;
 import mrandroid.app.adapter.AnswerAdapter;
 import mrandroid.app.databinding.ActivityHomeBinding;
-import mrandroid.app.model.AnswerModel;
 import mrandroid.app.model.QuestionModel;
 import mrandroid.app.util.AudioPlayer;
-import mrandroid.app.util.Info;
-import mrandroid.app.util.LoadingDialog;
+import mrandroid.app.util.QuestionsInfo;
 
 public class HomeActivity extends AppCompatActivity implements AnswerAdapter.OnItemClickListener {
 
@@ -43,7 +32,7 @@ public class HomeActivity extends AppCompatActivity implements AnswerAdapter.OnI
         setContentView(binding.getRoot());
 
         audioPlayer = new AudioPlayer();
-        questionList = Info.getAllQuestions();
+        questionList = QuestionsInfo.getAllQuestions();
         answerAdapter = new AnswerAdapter();
         answerAdapter.setListener(this);
         binding.rvAnswers.setAdapter(answerAdapter);

@@ -10,13 +10,10 @@ import android.widget.RadioButton;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.material.textfield.TextInputEditText;
-
 import java.util.ArrayList;
 import java.util.List;
 
 import mrandroid.app.R;
-import mrandroid.app.model.AnswerModel;
 
 public class AnswerAdapter extends RecyclerView.Adapter<AnswerAdapter.MedicineViewHolder> {
 

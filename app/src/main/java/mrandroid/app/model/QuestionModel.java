@@ -1,36 +1,38 @@
 package mrandroid.app.model;
 
-import java.util.List;
-
 public class QuestionModel {
 
-    private String text;
-    private int question;
-    private List<AnswerModel> answers;
+    private String questionText;
+    private int questionSound;
+    private int correctAnswer;
 
-    public QuestionModel(String text, int question, List<AnswerModel> answers) {
-        this.text = text;
-        this.question = question;
-        this.answers = answers;
+    public QuestionModel(String questionText, int questionSound, int correctAnswer) {
+        this.questionText = questionText;
+        this.questionSound = questionSound;
+        this.correctAnswer = correctAnswer;
     }
 
-    public String getText() {return text;}
-
-    public void setText(String text) {this.text = text;}
-
-    public int getQuestion() {
-        return question;
+    public String getQuestionText() {
+        return questionText;
     }
 
-    public void setQuestion(int question) {
-        this.question = question;
+    public void setQuestionText(String questionText) {
+        this.questionText = questionText;
     }
 
-    public List<AnswerModel> getAnswers() {
-        return answers;
+    public int getQuestionSound() {
+        return questionSound;
     }
 
-    public void setAnswers(List<AnswerModel> answers) {
-        this.answers = answers;
+    public void setQuestionSound(int questionSound) {
+        this.questionSound = questionSound;
+    }
+
+    public int getCorrectAnswer() {
+        return correctAnswer;
+    }
+
+    public void setCorrectAnswer(int correctAnswer) {
+        this.correctAnswer = correctAnswer;
     }
 }
