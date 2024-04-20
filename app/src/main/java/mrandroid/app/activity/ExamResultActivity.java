@@ -1,10 +1,11 @@
-package mrandroid.app.activity.main;
+package mrandroid.app.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import mrandroid.app.activity.HomeActivity;
 import mrandroid.app.databinding.ActivityExamResultBinding;
 
 public class ExamResultActivity extends AppCompatActivity {
@@ -22,7 +23,7 @@ public class ExamResultActivity extends AppCompatActivity {
         binding.tvResult.setText("النتيجة: " + score + "/" + total);
 
         binding.btnReTakeExam.setOnClickListener(v -> {
-            startActivity(new Intent(getBaseContext(), HomeActivity.class));
+            startActivity(new Intent(getBaseContext(), StartActivity.class));
             finish();
         });
     }

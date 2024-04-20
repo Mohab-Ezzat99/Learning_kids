@@ -1,13 +1,11 @@
-package mrandroid.app.activity.auth;
+package mrandroid.app.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import mrandroid.app.R;
 import mrandroid.app.databinding.ActivitySplashBinding;
 
@@ -26,7 +24,7 @@ public class SplashActivity extends AppCompatActivity {
         binding.tvDesc.setAnimation(anim_left);
 
         new Handler().postDelayed(() -> {
-            startActivity(new Intent(getBaseContext(), LoginActivity.class));
+            startActivity(new Intent(getBaseContext(), StartActivity.class));
             finish();
         }, 1800);
     }

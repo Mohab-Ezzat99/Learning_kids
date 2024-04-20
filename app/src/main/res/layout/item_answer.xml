@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layoutDirection="rtl"
-    android:layout_margin="@dimen/_8sdp"
-    android:padding="@dimen/_8sdp">
+    android:layout_margin="@dimen/_4sdp"
+    android:padding="@dimen/_4sdp">
 
     <RadioButton
         android:id="@+id/radioButton"
@@ -22,6 +21,7 @@
         android:id="@+id/ivImg"
         android:layout_width="@dimen/_74sdp"
         android:layout_height="@dimen/_74sdp"
+        android:layout_marginStart="@dimen/_8sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/radioButton"

@@ -1,6 +1,13 @@
 package mrandroid.app.model;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity
 public class QuestionModel {
+
+    @PrimaryKey(autoGenerate = true)
+    private int id;
 
     private String questionText;
     private int questionSound;
@@ -10,6 +17,14 @@ public class QuestionModel {
         this.questionText = questionText;
         this.questionSound = questionSound;
         this.correctAnswer = correctAnswer;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getQuestionText() {

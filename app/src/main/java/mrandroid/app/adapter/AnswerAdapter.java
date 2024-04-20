@@ -17,7 +17,7 @@ import mrandroid.app.R;
 
 public class AnswerAdapter extends RecyclerView.Adapter<AnswerAdapter.MedicineViewHolder> {
 
-    private List<AnswerModel> list = new ArrayList<>();
+    private List<Integer> list = new ArrayList<>();
     private OnItemClickListener listener;
     private int selectedPosition = -1;
 
@@ -31,15 +31,15 @@ public class AnswerAdapter extends RecyclerView.Adapter<AnswerAdapter.MedicineVi
     @SuppressLint("SetTextI18n")
     @Override
     public void onBindViewHolder(@NonNull MedicineViewHolder holder, int position) {
-        AnswerModel item = list.get(holder.getAdapterPosition());
+        Integer item = list.get(holder.getAdapterPosition());
 
-        holder.radioButton.setChecked(selectedPosition == holder.getAdapterPosition());
+        holder.radioButton.setChecked(selectedPosition == item);
 
-        holder.ivImg.setImageResource(item.getAnswer());
+        holder.ivImg.setImageResource(item);
 
         holder.itemView.getRootView().setOnClickListener(view -> {
             listener.onItemClick(item);
-            selectedPosition = holder.getAdapterPosition();
+            selectedPosition = item;
             notifyDataSetChanged();
         });
     }
@@ -49,15 +49,15 @@ public class AnswerAdapter extends RecyclerView.Adapter<AnswerAdapter.MedicineVi
         return list.size();
     }
 
-    public AnswerModel getSelectedAnswer() {
-        return list.get(selectedPosition);
+    public Integer getSelectedAnswer() {
+        return selectedPosition;
     }
 
     public void setListener(OnItemClickListener listener) {
         this.listener = listener;
     }
 
-    public void setList(List<AnswerModel> list) {
+    public void setList(List<Integer> list) {
         this.selectedPosition = -1;
         this.list = list;
         this.notifyDataSetChanged();
@@ -88,6 +88,6 @@ public class AnswerAdapter extends RecyclerView.Adapter<AnswerAdapter.MedicineVi
     }
 
     public interface OnItemClickListener {
-        void onItemClick(AnswerModel item);
+        void onItemClick(Integer item);
     }
 }

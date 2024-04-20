@@ -8,6 +8,14 @@ import mrandroid.app.model.QuestionModel;
 
 public class QuestionsInfo {
 
+    public static final int charAr = 1;
+    public static final int charEn = 2;
+    public static final int color = 3;
+    public static final int animal = 4;
+    public static final int numberAr = 5;
+    public static final int numberEn = 6;
+    public static final int shapes = 7;
+
     public static List<QuestionModel> getCharArQuestions() {
         ArrayList<QuestionModel> questions_char_ar = new ArrayList<>();
         questions_char_ar.add(new QuestionModel("أين حرف أ ؟", R.raw.sca_a, R.drawable.pic_ca_18));
