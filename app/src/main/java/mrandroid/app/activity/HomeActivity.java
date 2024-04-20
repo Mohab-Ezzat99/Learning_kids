@@ -37,24 +37,31 @@ public class HomeActivity extends AppCompatActivity implements AnswerAdapter.OnI
         switch (type) {
             case 1:
                 questionList = QuestionsInfo.getCharArQuestions();
+                binding.homeRoot.setBackgroundResource(R.color.white);
                 break;
             case 2:
                 questionList = QuestionsInfo.getCharEnQuestions();
+                binding.homeRoot.setBackgroundResource(R.color.white);
                 break;
             case 3:
                 questionList = QuestionsInfo.getColorQuestions();
+                binding.homeRoot.setBackgroundResource(R.color.white);
                 break;
             case 4:
                 questionList = QuestionsInfo.getAnimalQuestions();
+                binding.homeRoot.setBackgroundResource(R.drawable.pic_forest_bg);
                 break;
             case 5:
                 questionList = QuestionsInfo.getNumberArQuestions();
+                binding.homeRoot.setBackgroundResource(R.color.white);
                 break;
             case 6:
                 questionList = QuestionsInfo.getNumberEnQuestions();
+                binding.homeRoot.setBackgroundResource(R.color.white);
                 break;
             case 7:
                 questionList = QuestionsInfo.getShapeQuestions();
+                binding.homeRoot.setBackgroundResource(R.color.white);
                 break;
         }
 
