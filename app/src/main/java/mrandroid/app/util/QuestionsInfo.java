@@ -23,7 +23,7 @@ public class QuestionsInfo {
         questions_char_ar.add(new QuestionModel("أين حرف ك ؟", R.raw.sca_k, R.drawable.pic_ca_22));
         questions_char_ar.add(new QuestionModel("أين حرف و ؟", R.raw.sca_w, R.drawable.pic_ca_27));
         questions_char_ar.add(new QuestionModel("أين حرف ر ؟", R.raw.sca_r, R.drawable.pic_ca_10));
-        questions_char_ar.add(new QuestionModel("أين حرف أ ؟", R.raw.sca_a, R.drawable.pic_ca_18));
+        questions_char_ar.add(new QuestionModel("أين حرف أ ؟", R.raw.sca_a, R.drawable.pic_ca_1));
         questions_char_ar.add(new QuestionModel("أين حرف س ؟", R.raw.sca_s, R.drawable.pic_ca_12));
         questions_char_ar.add(new QuestionModel("أين حرف د ؟", R.raw.sca_d, R.drawable.pic_ca_8));
         questions_char_ar.add(new QuestionModel("أين حرف ي ؟", R.raw.sca_y, R.drawable.pic_ca_28));
