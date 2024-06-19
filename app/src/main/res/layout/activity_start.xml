@@ -10,7 +10,7 @@
     tools:context=".activity.HomeActivity">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,56 +18,17 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/tvCharAr"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="@dimen/_4sdp"
-            android:layout_weight="1"
-            android:background="@color/white"
-            android:elevation="@dimen/_2sdp"
-            android:gravity="center"
-            android:padding="@dimen/_24sdp"
-            android:text="الحروف العربية"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_20ssp" />
-
-        <TextView
-            android:id="@+id/tvCharEn"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="@dimen/_4sdp"
-            android:layout_weight="1"
-            android:background="@color/white"
-            android:elevation="@dimen/_2sdp"
-            android:gravity="center"
-            android:padding="@dimen/_24sdp"
-            android:text="الحروف الانجليزية"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_20ssp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_4sdp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-
-        <TextView
             android:id="@+id/tvColors"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="@dimen/_4sdp"
             android:layout_weight="1"
-            android:background="@color/white"
+            android:background="@drawable/shape_red"
             android:elevation="@dimen/_2sdp"
             android:gravity="center"
             android:padding="@dimen/_24sdp"
             android:text="الالوان"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="@dimen/_20ssp" />
 
         <TextView
@@ -76,12 +37,50 @@
             android:layout_height="match_parent"
             android:layout_margin="@dimen/_4sdp"
             android:layout_weight="1"
-            android:background="@color/white"
+            android:background="@drawable/shape_move"
             android:elevation="@dimen/_2sdp"
             android:gravity="center"
             android:padding="@dimen/_24sdp"
             android:text="الحيوانات"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout3">
+
+        <TextView
+            android:id="@+id/tvCharAr"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_yellow"
+            android:elevation="@dimen/_2sdp"
+            android:gravity="center"
+            android:padding="@dimen/_24sdp"
+            android:text="الحروف العربية"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp" />
+
+        <TextView
+            android:id="@+id/tvCharEn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_green_low"
+            android:elevation="@dimen/_2sdp"
+            android:gravity="center"
+            android:padding="@dimen/_24sdp"
+            android:text="الحروف الانجليزية"
+            android:textColor="@color/white"
             android:textSize="@dimen/_20ssp" />
 
     </LinearLayout>
@@ -93,7 +92,7 @@
         android:layout_marginTop="@dimen/_4sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <TextView
             android:id="@+id/tvNumbersAr"
@@ -101,12 +100,12 @@
             android:layout_height="match_parent"
             android:layout_margin="@dimen/_4sdp"
             android:layout_weight="1"
-            android:background="@color/white"
+            android:background="@drawable/shape_orange_high"
             android:elevation="@dimen/_2sdp"
             android:gravity="center"
             android:padding="@dimen/_24sdp"
             android:text="الارقام العربية"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="@dimen/_20ssp" />
 
         <TextView
@@ -115,12 +114,12 @@
             android:layout_height="match_parent"
             android:layout_margin="@dimen/_4sdp"
             android:layout_weight="1"
-            android:background="@color/white"
+            android:background="@drawable/shape_orange_low"
             android:elevation="@dimen/_2sdp"
             android:gravity="center"
             android:padding="@dimen/_24sdp"
             android:text="الارقام الانجليزية"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="@dimen/_20ssp" />
 
     </LinearLayout>
@@ -140,12 +139,12 @@
             android:layout_height="match_parent"
             android:layout_margin="@dimen/_4sdp"
             android:layout_weight="1"
-            android:background="@color/white"
+            android:background="@drawable/shape_green_high"
             android:elevation="@dimen/_2sdp"
             android:gravity="center"
             android:padding="@dimen/_24sdp"
-            android:text="الاشكال"
-            android:textColor="@color/black"
+            android:text="الاشكال الهندسية"
+            android:textColor="@color/white"
             android:textSize="@dimen/_20ssp" />
 
         <TextView

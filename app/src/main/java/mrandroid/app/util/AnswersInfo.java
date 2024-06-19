@@ -86,13 +86,13 @@ public class AnswersInfo {
 
     public static List<Integer> getAnimalAnswers() {
         ArrayList<Integer> answers_animal = new ArrayList<>();
-        answers_animal.add(R.drawable.pic_forest_elephant);
-        answers_animal.add(R.drawable.pic_forest_lion);
-        answers_animal.add(R.drawable.pic_forest_monkey);
-        answers_animal.add(R.drawable.pic_forest_snake);
-        answers_animal.add(R.drawable.pic_forest_tiger);
         answers_animal.add(R.drawable.pic_forest_zrafa);
+        answers_animal.add(R.drawable.pic_forest_lion);
+        answers_animal.add(R.drawable.pic_forest_elephant);
         answers_animal.add(R.drawable.pic_forest_zebra);
+        answers_animal.add(R.drawable.pic_forest_monkey);
+        answers_animal.add(R.drawable.pic_forest_tiger);
+        answers_animal.add(R.drawable.pic_forest_snake);
         return answers_animal;
     }
 

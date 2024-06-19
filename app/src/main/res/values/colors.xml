@@ -12,4 +12,12 @@
     <color name="gray">#838383</color>
     <color name="gray_low">#EAE9E9</color>
 
+    <color name="yellow">#FFC107</color>
+    <color name="green_low">#8BC34A</color>
+    <color name="red">#DF1F1E</color>
+    <color name="move">#7E00E6</color>
+    <color name="orange_high">#FF5722</color>
+    <color name="orange_low">#FF9800</color>
+    <color name="green_high">#009688</color>
+
 </resources>
