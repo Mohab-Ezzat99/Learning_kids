@@ -35,57 +35,40 @@ public class HomeActivity extends AppCompatActivity implements AnswerAdapter.OnI
 
         int type = getIntent().getIntExtra("type", 0);
         switch (type) {
-            case 1:
+            case QuestionsInfo.charAr:
                 questionList = QuestionsInfo.getCharArQuestions();
+                answersList = AnswersInfo.getCharArAnswers();
                 binding.homeRoot.setBackgroundResource(R.color.white);
                 break;
-            case 2:
+            case QuestionsInfo.charEn:
                 questionList = QuestionsInfo.getCharEnQuestions();
+                answersList = AnswersInfo.getCharEnAnswers();
                 binding.homeRoot.setBackgroundResource(R.color.white);
                 break;
-            case 3:
+            case QuestionsInfo.color:
                 questionList = QuestionsInfo.getColorQuestions();
+                answersList = AnswersInfo.getColorAnswers();
                 binding.homeRoot.setBackgroundResource(R.color.white);
                 break;
-            case 4:
+            case QuestionsInfo.animal:
                 questionList = QuestionsInfo.getAnimalQuestions();
+                answersList = AnswersInfo.getAnimalAnswers();
                 binding.homeRoot.setBackgroundResource(R.drawable.pic_forest_bg);
                 break;
-            case 5:
+            case QuestionsInfo.numberAr:
                 questionList = QuestionsInfo.getNumberArQuestions();
-                binding.homeRoot.setBackgroundResource(R.color.white);
-                break;
-            case 6:
-                questionList = QuestionsInfo.getNumberEnQuestions();
-                binding.homeRoot.setBackgroundResource(R.color.white);
-                break;
-            case 7:
-                questionList = QuestionsInfo.getShapeQuestions();
-                binding.homeRoot.setBackgroundResource(R.color.white);
-                break;
-        }
-
-        switch (type) {
-            case 1:
-                answersList = AnswersInfo.getCharArAnswers();
-                break;
-            case 2:
-                answersList = AnswersInfo.getCharEnAnswers();
-                break;
-            case 3:
-                answersList = AnswersInfo.getColorAnswers();
-                break;
-            case 4:
-                answersList = AnswersInfo.getAnimalAnswers();
-                break;
-            case 5:
                 answersList = AnswersInfo.getNumberArAnswers();
+                binding.homeRoot.setBackgroundResource(R.color.white);
                 break;
-            case 6:
+            case QuestionsInfo.numberEn:
+                questionList = QuestionsInfo.getNumberEnQuestions();
                 answersList = AnswersInfo.getNumberEnAnswers();
+                binding.homeRoot.setBackgroundResource(R.color.white);
                 break;
-            case 7:
+            case QuestionsInfo.shapes:
+                questionList = QuestionsInfo.getShapeQuestions();
                 answersList = AnswersInfo.getShapeAnswers();
+                binding.homeRoot.setBackgroundResource(R.color.white);
                 break;
         }
 
