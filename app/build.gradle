@@ -5,16 +5,17 @@ plugins {
 
 android {
     namespace 'mrandroid.app'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "mrandroid.app"
         minSdk 21
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -57,7 +58,7 @@ dependencies {
     implementation "androidx.room:room-rxjava3:2.3.0"
 
     //Multi-dex
-    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'androidx.multidex:multidex:2.0.1'
 
     //GSon
     implementation 'com.google.code.gson:gson:2.8.8'
@@ -73,7 +74,4 @@ dependencies {
     // LiveData
     //noinspection GradleDependency
     implementation 'androidx.lifecycle:lifecycle-livedata:2.3.1'
-
-    // youtube
-    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'
 }
