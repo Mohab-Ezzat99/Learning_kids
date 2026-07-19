@@ -139,7 +139,7 @@
             android:layout_height="match_parent"
             android:layout_margin="@dimen/_4sdp"
             android:layout_weight="1"
-            android:background="@drawable/shape_green_high"
+            android:background="@drawable/shape_move"
             android:elevation="@dimen/_2sdp"
             android:gravity="center"
             android:padding="@dimen/_24sdp"
@@ -148,14 +148,17 @@
             android:textSize="@dimen/_20ssp" />
 
         <TextView
+            android:id="@+id/btnScore"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="@dimen/_4sdp"
             android:layout_weight="1"
+            android:background="@drawable/shape_green_high"
             android:elevation="@dimen/_2sdp"
             android:gravity="center"
             android:padding="@dimen/_24sdp"
-            android:textColor="@color/black"
+            android:text="0/14"
+            android:textColor="@color/white"
             android:textSize="@dimen/_20ssp" />
 
     </LinearLayout>

@@ -5,8 +5,8 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import mrandroid.app.activity.HomeActivity;
 import mrandroid.app.databinding.ActivityExamResultBinding;
+import mrandroid.app.util.DayProgressPrefs;
 
 public class ExamResultActivity extends AppCompatActivity {
 
@@ -17,6 +17,9 @@ public class ExamResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityExamResultBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        // Mark today's date as completed and increase the 0-14 progress score.
+        new DayProgressPrefs(this).markTodayCompleted();
 
         int total = getIntent().getIntExtra("total", 0);
         int score = getIntent().getIntExtra("score", 0);

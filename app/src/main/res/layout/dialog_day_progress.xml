@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/_12sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btnPrevMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_8sdp"
+            android:text="‹"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_22ssp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvMonthYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btnNextMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_8sdp"
+            android:text="›"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_22ssp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="أحد"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_11ssp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="إثن"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_11ssp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="ثلا"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_11ssp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="أرب"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_11ssp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="خمي"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_11ssp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="جمع"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_11ssp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="سبت"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_11ssp" />
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/gridDays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:columnCount="7"
+        android:useDefaultMargins="false" />
+
+    <TextView
+        android:id="@+id/tvLegend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:gravity="center"
+        android:text="الأيام المكتملة باللون الأخضر"
+        android:textColor="@color/green_high"
+        android:textSize="@dimen/_12ssp" />
+
+    <TextView
+        android:id="@+id/btnCloseCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/shape_green_high"
+        android:elevation="@dimen/_2sdp"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="إغلاق"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp" />
+
+</LinearLayout>
