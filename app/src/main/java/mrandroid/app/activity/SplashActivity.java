@@ -21,7 +21,6 @@ public class SplashActivity extends AppCompatActivity {
 
         Animation anim_left = AnimationUtils.loadAnimation(getBaseContext(), R.anim.anim_left);
         binding.ivLogo.setAnimation(anim_left);
-        binding.tvDesc.setAnimation(anim_left);
 
         new Handler().postDelayed(() -> {
             startActivity(new Intent(getBaseContext(), StartActivity.class));

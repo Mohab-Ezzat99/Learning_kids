@@ -17,16 +17,4 @@
         app:layout_constraintVertical_bias=".45"
         app:srcCompat="@drawable/pic_icon" />
 
-    <TextView
-        android:id="@+id/tv_desc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_8sdp"
-        android:text="@string/app_name"
-        android:textColor="?attr/colorOnSecondary"
-        android:textSize="@dimen/_20ssp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
