@@ -74,10 +74,13 @@
         android:id="@+id/fabSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_16sdp"
-        app:tint="@color/white"
+        android:layout_margin="16dp"
+        app:backgroundTint="@color/green_low"
+        app:elevation="6dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_correct" />
+        app:pressedTranslationZ="8dp"
+        app:srcCompat="@drawable/ic_correct"
+        app:tint="@android:color/white" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
