@@ -25,9 +25,9 @@ public class QuestionsInfo {
         questions_char_ar.add(new QuestionModel("أين حرف ر ؟", R.raw.sca_r, R.drawable.pic_ca_10));
         questions_char_ar.add(new QuestionModel("أين حرف أ ؟", R.raw.sca_a, R.drawable.pic_ca_1));
         questions_char_ar.add(new QuestionModel("أين حرف س ؟", R.raw.sca_s, R.drawable.pic_ca_12));
-        questions_char_ar.add(new QuestionModel("أين حرف د ؟", R.raw.sca_d, R.drawable.pic_ca_8));
-        questions_char_ar.add(new QuestionModel("أين حرف ي ؟", R.raw.sca_y, R.drawable.pic_ca_28));
-        questions_char_ar.add(new QuestionModel("أين حرف ت ؟", R.raw.sca_t, R.drawable.pic_ca_3));
+//        questions_char_ar.add(new QuestionModel("أين حرف د ؟", R.raw.sca_d, R.drawable.pic_ca_8));
+//        questions_char_ar.add(new QuestionModel("أين حرف ي ؟", R.raw.sca_y, R.drawable.pic_ca_28));
+//        questions_char_ar.add(new QuestionModel("أين حرف ت ؟", R.raw.sca_t, R.drawable.pic_ca_3));
         return questions_char_ar;
     }
 
@@ -40,9 +40,9 @@ public class QuestionsInfo {
         questions_char_en.add(new QuestionModel("أين حرف n ؟", R.raw.sce_n, R.drawable.pic_char_n));
         questions_char_en.add(new QuestionModel("أين حرف r ؟", R.raw.sce_r, R.drawable.pic_char_r));
         questions_char_en.add(new QuestionModel("أين حرف b ؟", R.raw.sce_b, R.drawable.pic_char_b));
-        questions_char_en.add(new QuestionModel("أين حرف t ؟", R.raw.sce_t, R.drawable.pic_char_t));
-        questions_char_en.add(new QuestionModel("أين حرف w ؟", R.raw.sce_w, R.drawable.pic_char_w));
-        questions_char_en.add(new QuestionModel("أين حرف d ؟", R.raw.sce_d, R.drawable.pic_char_d));
+//        questions_char_en.add(new QuestionModel("أين حرف t ؟", R.raw.sce_t, R.drawable.pic_char_t));
+//        questions_char_en.add(new QuestionModel("أين حرف w ؟", R.raw.sce_w, R.drawable.pic_char_w));
+//        questions_char_en.add(new QuestionModel("أين حرف d ؟", R.raw.sce_d, R.drawable.pic_char_d));
         return questions_char_en;
     }
 
@@ -79,9 +79,9 @@ public class QuestionsInfo {
         questions_number_ar.add(new QuestionModel("أين رقم 3 ؟", R.raw.sn3, R.drawable.pic_numbers_3_ar));
         questions_number_ar.add(new QuestionModel("أين رقم 5 ؟", R.raw.sn5, R.drawable.pic_numbers_5_ar));
         questions_number_ar.add(new QuestionModel("أين رقم 10 ؟", R.raw.sn10, R.drawable.pic_numbers_10_ar));
-        questions_number_ar.add(new QuestionModel("أين رقم 2 ؟", R.raw.sn2, R.drawable.pic_numbers_2_ar));
-        questions_number_ar.add(new QuestionModel("أين رقم 1 ؟", R.raw.sn1, R.drawable.pic_numbers_1_ar));
-        questions_number_ar.add(new QuestionModel("أين رقم 8 ؟", R.raw.sn8, R.drawable.pic_numbers_8_ar));
+//        questions_number_ar.add(new QuestionModel("أين رقم 2 ؟", R.raw.sn2, R.drawable.pic_numbers_2_ar));
+//        questions_number_ar.add(new QuestionModel("أين رقم 1 ؟", R.raw.sn1, R.drawable.pic_numbers_1_ar));
+//        questions_number_ar.add(new QuestionModel("أين رقم 8 ؟", R.raw.sn8, R.drawable.pic_numbers_8_ar));
         return questions_number_ar;
     }
 
@@ -94,9 +94,9 @@ public class QuestionsInfo {
         questions_number_en.add(new QuestionModel("أين رقم 10 ؟", R.raw.sn10, R.drawable.pic_numbers_10));
         questions_number_en.add(new QuestionModel("أين رقم 8 ؟", R.raw.sn8, R.drawable.pic_numbers_8_en));
         questions_number_en.add(new QuestionModel("أين رقم 3 ؟", R.raw.sn3, R.drawable.pic_numbers_3_en));
-        questions_number_en.add(new QuestionModel("أين رقم 2 ؟", R.raw.sn2, R.drawable.pic_numbers_2_en));
-        questions_number_en.add(new QuestionModel("أين رقم 1 ؟", R.raw.sn1, R.drawable.pic_numbers_1_en));
-        questions_number_en.add(new QuestionModel("أين رقم 7 ؟", R.raw.sn7, R.drawable.pic_numbers_7_en));
+//        questions_number_en.add(new QuestionModel("أين رقم 2 ؟", R.raw.sn2, R.drawable.pic_numbers_2_en));
+//        questions_number_en.add(new QuestionModel("أين رقم 1 ؟", R.raw.sn1, R.drawable.pic_numbers_1_en));
+//        questions_number_en.add(new QuestionModel("أين رقم 7 ؟", R.raw.sn7, R.drawable.pic_numbers_7_en));
         return questions_number_en;
     }
 
