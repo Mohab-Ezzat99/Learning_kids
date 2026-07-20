@@ -53,7 +53,7 @@ public class HomeActivity extends AppCompatActivity implements AnswerAdapter.OnI
             case QuestionsInfo.animal:
                 questionList = QuestionsInfo.getAnimalQuestions();
                 answersList = AnswersInfo.getAnimalAnswers();
-                binding.homeRoot.setBackgroundResource(R.drawable.pic_forest_bg);
+                binding.homeRoot.setBackgroundResource(R.color.white);
                 break;
             case QuestionsInfo.numberAr:
                 questionList = QuestionsInfo.getNumberArQuestions();
