@@ -26,7 +26,6 @@ public class ExamResultActivity extends AppCompatActivity {
         binding.tvResult.setText("النتيجة: " + score + "/" + total);
 
         binding.btnReTakeExam.setOnClickListener(v -> {
-            startActivity(new Intent(getBaseContext(), StartActivity.class));
             finish();
         });
     }
