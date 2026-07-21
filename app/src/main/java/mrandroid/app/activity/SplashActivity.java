@@ -1,4 +1,4 @@
-package mrandroid.app.activity;
+package mrandroid.app.learingkids.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,8 +6,8 @@ import android.os.Handler;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import androidx.appcompat.app.AppCompatActivity;
-import mrandroid.app.R;
-import mrandroid.app.databinding.ActivitySplashBinding;
+import mrandroid.app.learingkids.R;
+import mrandroid.app.learingkids.databinding.ActivitySplashBinding;
 
 public class SplashActivity extends AppCompatActivity {
 

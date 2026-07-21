@@ -1,10 +1,10 @@
-package mrandroid.app.util;
+package mrandroid.app.learingkids.learingkids;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import mrandroid.app.R;
-import mrandroid.app.model.QuestionModel;
+import mrandroid.app.learingkids.R;
+import mrandroid.app.learingkids.model.QuestionModel;
 
 public class QuestionsInfo {
 

@@ -1,4 +1,4 @@
-package mrandroid.app.activity;
+package mrandroid.app.learingkids.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,13 +8,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.List;
 
-import mrandroid.app.R;
-import mrandroid.app.adapter.AnswerAdapter;
-import mrandroid.app.databinding.ActivityHomeBinding;
-import mrandroid.app.model.QuestionModel;
-import mrandroid.app.util.AnswersInfo;
-import mrandroid.app.util.AudioPlayer;
-import mrandroid.app.util.QuestionsInfo;
+import mrandroid.app.learingkids.R;
+import mrandroid.app.learingkids.adapter.AnswerAdapter;
+import mrandroid.app.learingkids.databinding.ActivityHomeBinding;
+import mrandroid.app.learingkids.model.QuestionModel;
+import mrandroid.app.learingkids.learingkids.AnswersInfo;
+import mrandroid.app.learingkids.learingkids.AudioPlayer;
+import mrandroid.app.learingkids.learingkids.QuestionsInfo;
 
 public class HomeActivity extends AppCompatActivity implements AnswerAdapter.OnItemClickListener {
 

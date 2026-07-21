@@ -1,4 +1,4 @@
-package mrandroid.app.model;
+package mrandroid.app.learingkids.model;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;

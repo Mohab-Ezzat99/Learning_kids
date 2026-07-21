@@ -1,4 +1,4 @@
-package mrandroid.app;
+package mrandroid.app.learingkids;
 
 import org.junit.Test;
 

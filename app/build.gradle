@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'mrandroid.app'
+    namespace 'mrandroid.app.learingkids'
     compileSdk 34
 
     defaultConfig {
-        applicationId "mrandroid.app"
+        applicationId "mrandroid.app.learingkids"
         minSdk 21
         targetSdk 34
         versionCode 1

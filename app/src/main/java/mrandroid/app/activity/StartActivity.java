@@ -1,4 +1,4 @@
-package mrandroid.app.activity;
+package mrandroid.app.learingkids.activity;
 
 import android.app.Dialog;
 import android.content.Intent;
@@ -19,10 +19,10 @@ import java.util.Calendar;
 import java.util.Locale;
 import java.util.Set;
 
-import mrandroid.app.R;
-import mrandroid.app.databinding.ActivityStartBinding;
-import mrandroid.app.util.DayProgressPrefs;
-import mrandroid.app.util.QuestionsInfo;
+import mrandroid.app.learingkids.R;
+import mrandroid.app.learingkids.databinding.ActivityStartBinding;
+import mrandroid.app.learingkids.learingkids.DayProgressPrefs;
+import mrandroid.app.learingkids.learingkids.QuestionsInfo;
 
 public class StartActivity extends AppCompatActivity {
 

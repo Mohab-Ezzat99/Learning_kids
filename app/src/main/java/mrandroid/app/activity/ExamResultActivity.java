@@ -1,12 +1,12 @@
-package mrandroid.app.activity;
+package mrandroid.app.learingkids.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import mrandroid.app.databinding.ActivityExamResultBinding;
-import mrandroid.app.util.DayProgressPrefs;
+import mrandroid.app.learingkids.databinding.ActivityExamResultBinding;
+import mrandroid.app.learingkids.learingkids.DayProgressPrefs;
 
 public class ExamResultActivity extends AppCompatActivity {
 

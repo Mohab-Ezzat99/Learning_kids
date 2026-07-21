@@ -1,4 +1,4 @@
-package mrandroid.app;
+package mrandroid.app.learingkids;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("mrandroid.app", appContext.getPackageName());
+        assertEquals("mrandroid.app.learingkids", appContext.getPackageName());
     }
 }

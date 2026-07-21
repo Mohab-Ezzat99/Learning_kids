@@ -1,4 +1,4 @@
-package mrandroid.app.adapter;
+package mrandroid.app.learingkids.adapter;
 
 import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-import mrandroid.app.R;
+import mrandroid.app.learingkids.R;
 
 public class AnswerAdapter extends RecyclerView.Adapter<AnswerAdapter.MedicineViewHolder> {
 
